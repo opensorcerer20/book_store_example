@@ -2,6 +2,9 @@
 
 Make a bookstore website to demonstrate knowledge of Laravel and its systems
 
+- [x] ORM for inventory
+- [x] seeder to set database
+- [ ] command to reset database
 - [ ] queue orders
   - [ ] each item in an order takes a few seconds to process
   - [ ] show progress on front end (pipeline from front to back)
@@ -11,9 +14,8 @@ Make a bookstore website to demonstrate knowledge of Laravel and its systems
 - [ ] front end
   - [ ] responsive design: desktop, tablet, mobile
   - [ ] SPA?
+  - [ ] SSR
 - [ ] notifications: TBD
-- [ ] ORM for inventory
-- [ ] seeder to set/reset database
 - [ ] inventory per unique user to allow reset on demand that doesnt affect others
   - [ ] main book database never changes
   - [ ] layer on top has unique user changes
@@ -26,3 +28,5 @@ Make a bookstore website to demonstrate knowledge of Laravel and its systems
   - [ ] order fulfilled (email)
   - [ ] book sold (adjust inventory, send message to front end)
 - [ ] storage: TBD
+- [ ] get something from S3
+- [ ] serverless: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/php-laravel-tutorial.html

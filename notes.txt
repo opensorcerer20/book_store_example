@@ -1,0 +1,4 @@
+- mysql setup
+-- composer require laravel/sail --dev
+-- ./vendor/bin/sail up
+-- problem: some kind of permission error trying to access mysql qith sail
