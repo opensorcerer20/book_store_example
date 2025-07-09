@@ -9,6 +9,16 @@ Make a bookstore website to demonstrate knowledge of Laravel and its systems
 
 - [x] ORM for inventory
 - [x] seeder to set database
+- [ ] cart
+  - [ ] models
+  - [ ] pivot table
+  - [ ] migrations
+  - [ ] must be logged in
+  - [ ] total in cart
+  - [ ] cart page
+- [ ] pre commit hooks
+  - [ ] npm run format
+  - [ ] npm run lint
 - [ ] command to reset database
 - [ ] queue orders
   - [ ] each item in an order takes a few seconds to process

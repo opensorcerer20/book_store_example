@@ -8,6 +8,8 @@ Route::get('/', function () {
     return Inertia::render('welcome');
 })->name('home');
 
+// buy book route will check if user logged in; if yes, add to cart, else force login
+
 Route::get('/books', [BookController::class, 'index']);
 
 Route::middleware(['auth', 'verified'])->group(function () {
