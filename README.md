@@ -1,5 +1,10 @@
 # Laravel example project
 
+"How do I start the server?"
+- Two actions are needed
+  - Front end: npm run dev
+  - Back end: php artisan serve
+
 Make a bookstore website to demonstrate knowledge of Laravel and its systems
 
 - [x] ORM for inventory
