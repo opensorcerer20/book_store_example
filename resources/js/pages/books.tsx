@@ -1,9 +1,5 @@
 import { SharedData } from '@/types';
-import {
-    Head,
-    Link,
-    usePage,
-} from '@inertiajs/react';
+import { Head, Link, usePage } from '@inertiajs/react';
 
 type Book = {
     isbn: number;
@@ -57,45 +53,45 @@ export default function Index({ books }: IndexProps) {
             <Head title="Books" />
             {auth.user ? (
                 <>
-                            <Link
-                                href={route('dashboard')}
-                                className="inline-block rounded-sm border border-[#19140035] px-5 py-1.5 text-sm leading-normal text-[#1b1b18] hover:border-[#1915014a] dark:border-[#3E3E3A] dark:text-[#EDEDEC] dark:hover:border-[#62605b]"
-                            >
-                                Dashboard
-                            </Link>
-                            {/* href={route('cart')} */}
-                            <Link
-                                href={route('dashboard')}
-                                className="inline-block rounded-sm border border-[#19140035] px-5 py-1.5 text-sm leading-normal text-[#1b1b18] hover:border-[#1915014a] dark:border-[#3E3E3A] dark:text-[#EDEDEC] dark:hover:border-[#62605b]"
-                            >
-                                Cart (x)
-                            </Link>
-                            </>
-                        ) : (
-                            <>
-                                <Link
-                                    href={route('login')}
-                                    className="inline-block rounded-sm border border-transparent px-5 py-1.5 text-sm leading-normal text-[#1b1b18] hover:border-[#19140035] dark:text-[#EDEDEC] dark:hover:border-[#3E3E3A]"
-                                >
-                                    Log in
-                                </Link>
-                                <Link
-                                    href={route('register')}
-                                    className="inline-block rounded-sm border border-[#19140035] px-5 py-1.5 text-sm leading-normal text-[#1b1b18] hover:border-[#1915014a] dark:border-[#3E3E3A] dark:text-[#EDEDEC] dark:hover:border-[#62605b]"
-                                >
-                                    Register
-                                </Link>
-                            </>
-                        )}
-                        <main>
-            <section className="h-full w-full bg-amber-100">
-            <h1 className="my-8 text-center text-3xl font-bold text-gray-500">Book Store</h1>
-            <div className="mx-auto flex max-w-5xl flex-wrap gap-8 text-gray-500">
-                {books.map((book) => (
-                    <BookComponent book={book} />
-                ))}
-            </div>
-            </section>
+                    <Link
+                        href={route('dashboard')}
+                        className="inline-block rounded-sm border border-[#19140035] px-5 py-1.5 text-sm leading-normal text-[#1b1b18] hover:border-[#1915014a] dark:border-[#3E3E3A] dark:text-[#EDEDEC] dark:hover:border-[#62605b]"
+                    >
+                        Dashboard
+                    </Link>
+                    {/* href={route('cart')} */}
+                    <Link
+                        href={route('dashboard')}
+                        className="inline-block rounded-sm border border-[#19140035] px-5 py-1.5 text-sm leading-normal text-[#1b1b18] hover:border-[#1915014a] dark:border-[#3E3E3A] dark:text-[#EDEDEC] dark:hover:border-[#62605b]"
+                    >
+                        Cart (x)
+                    </Link>
+                </>
+            ) : (
+                <>
+                    <Link
+                        href={route('login')}
+                        className="inline-block rounded-sm border border-transparent px-5 py-1.5 text-sm leading-normal text-[#1b1b18] hover:border-[#19140035] dark:text-[#EDEDEC] dark:hover:border-[#3E3E3A]"
+                    >
+                        Log in
+                    </Link>
+                    <Link
+                        href={route('register')}
+                        className="inline-block rounded-sm border border-[#19140035] px-5 py-1.5 text-sm leading-normal text-[#1b1b18] hover:border-[#1915014a] dark:border-[#3E3E3A] dark:text-[#EDEDEC] dark:hover:border-[#62605b]"
+                    >
+                        Register
+                    </Link>
+                </>
+            )}
+            <main>
+                <section className="h-full w-full bg-amber-100">
+                    <h1 className="my-8 text-center text-3xl font-bold text-gray-500">Book Store</h1>
+                    <div className="mx-auto flex max-w-5xl flex-wrap gap-8 text-gray-500">
+                        {books.map((book) => (
+                            <BookComponent book={book} />
+                        ))}
+                    </div>
+                </section>
             </main>
         </>
     );
