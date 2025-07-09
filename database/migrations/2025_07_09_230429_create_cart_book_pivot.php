@@ -16,8 +16,9 @@ return new class extends Migration
             $table->unsignedBigInteger('cart_id');
             $table->integer('quantity');
 
-            $table->foreign('book_id')->references('id')->on('books')->onDelete('cascade');
-            $table->foreign('cart_id')->references('id')->on('carts')->onDelete('cascade');
+            $table->foreign('book_id')->references('id')->on('books');
+            $table->foreign('cart_id')->references('id')->on('carts');
+            $table->primary(['book_id', 'cart_id']);
         });
     }
 

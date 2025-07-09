@@ -1,21 +1,27 @@
 # Laravel example project
 
-"How do I start the server?"
+## "How do I start the server?"
 - Two actions are needed
   - Front end: npm run dev
   - Back end: php artisan serve
+
+## "How do I run tests?"
+- php artisan test
 
 Make a bookstore website to demonstrate knowledge of Laravel and its systems
 
 - [x] ORM for inventory
 - [x] seeder to set database
 - [ ] cart
-  - [ ] models
-  - [ ] pivot table
-  - [ ] migrations
+  - [x] models
+  - [x] pivot table
+  - [x] migrations
   - [ ] must be logged in
-  - [ ] total in cart
+  - [ ] add to cart
+  - [ ] num items in cart
   - [ ] cart page
+  - [ ] change quantity
+  - [ ] remove from cart
 - [ ] pre commit hooks
   - [ ] npm run format
   - [ ] npm run lint
